@@ -1,2 +1,3 @@
-require('./module1.js');
-require('./module2.js');
+// list all modules to pack
+
+require('./01/hello.js');
