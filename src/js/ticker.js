@@ -1,11 +1,7 @@
-var Loader = require('./loader.js');
-var Mapper = require('./mapper.js');
-var Renderer = require('./renderer.js');
-
 class Ticker {
 
-    constructor(options) {
-
+    constructor(options, renderer) {
+        this.renderer = renderer;
     }
 
     tick() {
