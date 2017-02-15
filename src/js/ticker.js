@@ -1,5 +1,9 @@
 class Ticker {
 
+    /**
+     * @param options
+     * @param {Renderer} renderer
+     */
     constructor(options, renderer) {
         this.renderer = renderer;
     }
@@ -10,7 +14,7 @@ class Ticker {
         // map / aggregate data
         // create view model
         // render / display model / update current display
-        console.log("TICK TOCK");
+        this.renderer.render("TICK TOCK");
     }
 
 }
