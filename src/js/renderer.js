@@ -3,8 +3,8 @@ class Renderer {
 
     }
 
-    render(text) {
-        console.log(`render: ${text}`);
+    render(news) {
+        console.log(`render: ${news.getText()}`);
     }
 }
 
