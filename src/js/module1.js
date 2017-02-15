@@ -1,8 +1,3 @@
-var $ = require('jquery');
-
-
-console.log("module1stuff", $('h1'));
-
 class Auto {
     constructor(data) {
         this.make = data.make;
@@ -37,10 +32,4 @@ var car = new Car({
     isHatchback: false
 });
 
-
-
-$(function() {
-    var div = document.getElementById('output');
-    div.innerHTML = car.getDetails();
-});
 
