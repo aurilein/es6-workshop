@@ -10,6 +10,7 @@ class Loader {
         return new Promise(function (resolve, reject) {
             var xhr = new XMLHttpRequest();
             xhr.open('GET', url);
+            xhr.setRequestHeader('Accept', 'application/json');
             xhr.onload = () => {
                 if (xhr.status >= 200 && xhr.status < 300) {
                     resolve(xhr.response);

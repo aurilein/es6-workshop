@@ -4,7 +4,7 @@ class Renderer {
     }
 
     render(news) {
-        console.log(`render: ${news.getText()}`);
+        console.log(`render: ${news.getText()} (${news.getDate()})`);
     }
 }
 

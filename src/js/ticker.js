@@ -16,7 +16,7 @@ class Ticker {
             // parse data
 
             // map / aggregate data
-            var {title, text, date } = {title: 'Breaking News', text: "TICK TOCK", date: '11.2.2017'};
+            var {title, text, date } = JSON.parse(response)[0];
 
             // create view model
             const model = [
@@ -40,6 +40,10 @@ class News {
 
     getText() {
         return this.text;
+    }
+
+    getDate() {
+        return this.date;
     }
 
 }
