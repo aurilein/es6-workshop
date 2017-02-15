@@ -3,47 +3,24 @@ class Ticker {
     /**
      * @param options
      * @param {Loader} loader
+     * @param {Renderer} mapper
      * @param {Renderer} renderer
      */
-    constructor(options, loader, renderer) {
+    constructor(options, loader, mapper, renderer) {
         this.loader = loader;
+        this.mapper = mapper;
         this.renderer = renderer;
     }
 
     tick() {
         // load data from URL
-        this.loader.load("http://alphadev.local/workspace/es6-workshop/public/redaktion/ticker_text_1.json").then((response) => {
-            // parse data
+        this.loader.load("http://alphadev.local/workspace/es6-workshop/public/redaktion/ticker_text_1.json").then((json) => {
 
-            // map / aggregate data
-            var {title, text, date } = JSON.parse(response)[0];
-
-            // create view model
-            const model = [
-                new News(title, text, date)
-            ];
+            const model = this.mapper.x(json);
 
             // render / display model / update current display
             this.renderer.render(model[0]);
         });
-    }
-
-}
-
-class News {
-
-    constructor(title, text, date) {
-        this.title = title;
-        this.text = text;
-        this.date = date;
-    }
-
-    getText() {
-        return this.text;
-    }
-
-    getDate() {
-        return this.date;
     }
 
 }
