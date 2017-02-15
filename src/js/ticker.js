@@ -14,6 +14,9 @@ class Ticker {
         // map / aggregate data
         // create view model
         // render / display model / update current display
+        console.log("TICK TOCK");
     }
 
 }
+
+exports.Ticker = Ticker;
