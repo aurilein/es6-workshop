@@ -1,0 +1,15 @@
+Video:
+https://www.youtube.com/watch?v=9kJVYpOqcVU
+
+Run Module locally:
+NODE_ENV=production node_modules/.bin/webpack
+node_modules/.bin/webpack
+
+Node Install with Adding to package.json
+npm install webpack --save-dev
+
+Fake Data Generator
+https://www.mockaroo.com/
+
+Watching
+node_modules/.bin/webpack --watch-poll --progress

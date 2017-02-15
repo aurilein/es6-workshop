@@ -1,0 +1,14 @@
+{
+  "name": "ES6Workshop",
+  "description": "ES6 Workshop",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.14.0"
+  }
+}
