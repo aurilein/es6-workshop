@@ -6,7 +6,6 @@ module.exports = {
     context: __dirname,
     devtool: debug ? "inline-sourcemap" : null,
     entry: path.resolve(__dirname, "src/js/application.js"),
-    watch: true,
     output: {
         path: path.resolve(__dirname, "public/assets/js"),
         filename: "application.min.js"
