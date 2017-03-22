@@ -7,7 +7,10 @@ class Renderer {
     }
 
     render(news) {
-        console.log(`render: ${news.getText()} (${news.getDate()})`);
+        var message = `render: ${news.getText()} (${news.getDate()})`;
+
+        console.log(message);
+        document.getElementById('output').innerHTML = message;
     }
 }
 

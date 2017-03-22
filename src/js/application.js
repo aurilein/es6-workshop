@@ -11,4 +11,12 @@ const mapper = new mapper_module.Mapper();
 const renderer = new renderer_module.Renderer();
 
 const ticker = new ticker_module.Ticker({}, loader, mapper, renderer);
-ticker.tick();
+
+const onLoad = function() {
+    //new Scheduler().scheduleAtOnce(2000, function() {
+    ticker.tick();
+    //});
+};
+
+// see http://stackoverflow.com/a/800010
+document.addEventListener("DOMContentLoaded", onLoad);
