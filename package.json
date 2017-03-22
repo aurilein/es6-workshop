@@ -1,6 +1,11 @@
 {
   "name": "ES6Workshop",
-  "description": "ES6 Workshop",
+  "description": "ES6 Workshop to learn ES6 new features.",
+  "repository": {
+    "type": "git",
+    "url": " https://github.com/aurilein/es6-workshop.git"
+  },
+  "license": "BSD-3-Clause",
   "scripts": {
     "start": "webpack --config webpack.config.js"
   },
