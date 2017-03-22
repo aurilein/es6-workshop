@@ -8,7 +8,7 @@ class Mapper {
 
     map(json) {
         // parse data, map / aggregate data
-        var {title, text, date } = json[0];
+        const {title, text, date} = json[0];
 
         // create view model
         const model = [
