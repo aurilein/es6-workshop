@@ -6,3 +6,6 @@ npm install webpack --save-dev
 
 Fake Data Generator
 https://www.mockaroo.com/
+
+Testing Mocha Webpack Probleme?
+http://randycoulman.com/blog/2016/03/22/testing-with-mocha-and-webpack/
