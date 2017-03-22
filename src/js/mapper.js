@@ -11,15 +11,16 @@ class Mapper { // !! Class - http://es6-features.org/#ClassDefinition
      * @returns {News[]}
      */
     map(json) {
-        // parse data, map / aggregate data
-        const {title, text, date} = json[0]; // !! destructuring assignment - http://es6-features.org/#ObjectMatchingShorthandNotation
 
-        // create view model
-        const model = [
-            new News(title, text, date)
-        ];
+        const createNewsModel = function(element) {
+            // parse data, map / aggregate data
+            const { title, text, date } = element; // !! destructuring assignment - http://es6-features.org/#ObjectMatchingShorthandNotation
 
-        return model;
+            // create view model
+            return new News(title, text, date);
+        };
+
+        return json.map(createNewsModel);
     }
 
 }

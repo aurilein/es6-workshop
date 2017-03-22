@@ -23,6 +23,15 @@ describe('Mapper', function () {
         shouldContainSingleNewsData(newsList[0]);
     });
 
+    it('should parse two news', function () {
+        const newsList = mapper.map(jsonTwoNews);
+
+        newsList.length.should.equal(2);
+
+        shouldContainSingleNewsData(newsList[0]);
+        shouldContainSecondNewsData(newsList[1]);
+    });
+
 });
 
 const jsonSingleNews = [
@@ -34,7 +43,22 @@ const jsonSingleNews = [
 ];
 
 function shouldContainSingleNewsData(news) {
+    news.date.should.equal('2016-07-31');
     news.title.should.equal('NewsTitle');
     news.text.should.equal('NewsText');
-    news.date.should.equal('2016-07-31');
+}
+
+const jsonTwoNews = [
+    jsonSingleNews[0],
+    {
+        "date": "2016-08-31",
+        "title": "Another NewsTitle",
+        "text": "Another NewsText"
+    }
+];
+
+function shouldContainSecondNewsData(news) {
+    news.date.should.equal('2016-08-31');
+    news.title.should.equal('Another NewsTitle');
+    news.text.should.equal('Another NewsText');
 }
