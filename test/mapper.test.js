@@ -53,7 +53,8 @@ const jsonTwoNews = [
     {
         "date": "2016-08-31",
         "title": "Another NewsTitle",
-        "text": "Another NewsText"
+        "text": "Another NewsText",
+        "someOtherElementWeDoNotNeed": "ignore"
     }
 ];
 

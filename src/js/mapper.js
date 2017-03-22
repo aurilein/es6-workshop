@@ -18,6 +18,7 @@ class Mapper { // !! Class - http://es6-features.org/#ClassDefinition
 
             // create view model
             return new News(title, text, date);
+            // TODO maybe shorter like return new News(element);
         };
 
         return json.map(createNewsModel);
