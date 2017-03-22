@@ -1,9 +1,12 @@
+/**
+ * Create model from JSON.
+ */
 class Mapper {
 
     constructor() {
     }
 
-    x(json) {
+    map(json) {
         // parse data, map / aggregate data
         var {title, text, date } = json[0];
 
@@ -17,6 +20,9 @@ class Mapper {
 
 }
 
+/**
+ * Model of an news item displayed in ticker.
+ */
 class News {
 
     constructor(title, text, date) {
@@ -34,6 +40,5 @@ class News {
     }
 
 }
-
 
 exports.Mapper = Mapper;

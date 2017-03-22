@@ -1,3 +1,6 @@
+/**
+ * Show model on UI.
+ */
 class Renderer {
     constructor(data) {
 

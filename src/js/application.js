@@ -1,4 +1,6 @@
-// ticker
+/**
+ * Setup module. Wire together components, inject dependencies, start application.
+ */
 const loader_module = require('./loader.js');
 const mapper_module = require('./mapper.js');
 const renderer_module = require('./renderer.js');

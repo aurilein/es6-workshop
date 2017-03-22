@@ -28,8 +28,12 @@ Themen die gezeigt/gelernt werden sollen
 
 * Tech Stack
   * Node Project Setup (NPM)
+    * `sudo npm install`
   * Webpack (pack, watch)
+    * erstellt public assets
+    * wie sind Module?
   * ES6 Features nach Liste durch Serie von kleinen Requirements
+    *
   * React (UI)
   * Test?
 

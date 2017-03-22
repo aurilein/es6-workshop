@@ -1,10 +1,14 @@
+/**
+ *  Load data needed for Ticker.
+ */
 class Loader {
     constructor() {
     }
 
     /**
-     * @param (String) url
-     * @returns {Promise}
+     * Load a JSON from the URL.
+     * @param {String} url
+     * @returns {Promise} JSON data.
      */
     load(url) {
         return new Promise(function (resolve, reject) {
