@@ -6,6 +6,10 @@ class Mapper {
     constructor() {
     }
 
+    /**
+     * @param json
+     * @returns {News[]}
+     */
     map(json) {
         // parse data, map / aggregate data
         const {title, text, date} = json[0];
