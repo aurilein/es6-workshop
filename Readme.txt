@@ -33,7 +33,7 @@ Themen die gezeigt/gelernt werden sollen
     * erstellt public assets
     * wie sind Module?
   * ES6 Features nach Liste durch Serie von kleinen Requirements
-    *
+    * see !! comments
   * React (UI)
   * Test?
 

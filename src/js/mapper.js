@@ -1,7 +1,7 @@
 /**
  * Create model from JSON.
  */
-class Mapper {
+class Mapper { // !! Class - http://es6-features.org/#ClassDefinition
 
     constructor() {
     }
@@ -12,7 +12,7 @@ class Mapper {
      */
     map(json) {
         // parse data, map / aggregate data
-        const {title, text, date} = json[0];
+        const {title, text, date} = json[0]; // !! destructuring assignment - http://es6-features.org/#ObjectMatchingShorthandNotation
 
         // create view model
         const model = [
@@ -30,17 +30,21 @@ class Mapper {
 class News {
 
     constructor(title, text, date) {
-        this.title = title;
-        this.text = text;
-        this.date = date;
+        this._title = title;
+        this._text = text;
+        this._date = date;
     }
 
-    getText() {
-        return this.text;
+    get title() { // !! getter/setter - http://es6-features.org/#GetterSetter
+        return this._title;
     }
 
-    getDate() {
-        return this.date;
+    get text() {
+        return this._text;
+    }
+
+    get date() {
+        return this._date;
     }
 
 }
